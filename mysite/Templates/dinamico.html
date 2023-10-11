@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+</head>
+<body>
+    <header>
+        <h1>Hola {{name}}</h1>
+        <h1>Categoria</h1>
+        <h2>{{categories}}
+    </header>
+    <h2>Categorias</h2>
+<ul>
+{% for category in categories %}
+    <li>{{ category }}</li>
+{% endfor %}
+</ul>
+
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <h2></h2>
+        <p></p>
+    </main>
+    
+    <footer>
+        <p>Derechos de autor &copy; 2023 Mi Página Web</p>
+    </footer>
+</body>
+</html>

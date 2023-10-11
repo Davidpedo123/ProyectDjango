@@ -1,0 +1,61 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+#img  {
+    height: 110%; /* Esto hará que la imagen sea un 10% más alta que su contenedor */
+    width: 500px;
+    opacity: 2.5;
+    
+}
+#im2 {
+    height:auto;
+    height: 250px;
+}
+#im3 {
+    height:auto;
+    height: 250px;
+}
+#im4 {
+    height:auto;
+    height: 250px;
+}
+.contenido-oculto {
+    display: none;
+}
+

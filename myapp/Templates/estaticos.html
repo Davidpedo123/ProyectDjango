@@ -1,0 +1,70 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}?{% now 'U' %}">
+
+</head>
+<body>
+    <a href="#" id="volver-a-contenido-principal">Volver a contenido principal</a>
+
+    <header>
+        <h1>MagraSecurity{{name}}</h1>
+        <h2>La seguridad es calidad</h2>      
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <!-- Aquí van los demás enlaces -->
+        </ul>
+    </nav>
+    
+    <main>
+        <h2>LA SEGURIDAD</h2>
+        <p>Un aumento de la seguirdad de sus equipos y software, 
+            lo salva de futuros gasto en reparacion
+         debido a ataques de cirberdeilcuentes 
+        </p>
+        
+        <img src="{% static 'proyect.jpeg' %}" alt="Descripción de la imagen"
+        id='im'>
+        <h2>Grabadora de Audio en segundo plano</h2>
+        <p>Este programa te permitira grabar audio en segundo plano y de forma opcional subirlo<br/>a un servidor de forma automatizada un servidor de forma automatizada</p>
+        <img src="{% static 'icon.grabadora.jpeg' %}" alt="Descripción de la imagen"
+        id='im2'>
+        <br></br>
+        <a href="https://github.com/Davidpedo123/Grabadora_de_Audio">Este es el texto del enlace del programa</a>
+        <h2>Gusano</h2>
+        <p>Un gusano informatico, basico el cual replica el codigo dentro del mismo programa</br> utilizado frecuentemente por ciberdelicuentes para dinfundir codico malicioso</p>
+        <img src="{% static 'gusano.OIG.jpeg' %}" alt="Descripción de la imagen"
+        id='im3'>
+        <br></br>
+        <a href="https://github.com/Davidpedo123/Gusano-Infor">Enlace</a>
+        <h2>Stream</h2>
+        <p>Este programa crea un servidor local, el cual trasmite envio desde la maquina en el que se ejecuto mediante la camara delantera<p>
+            <img src="{% static 'stream.OIG.jpeg' %}" alt="Descripción de la imagen"
+            id='im4'>   
+        <br></br>
+        <a href="https://github.com/Davidpedo123/Stream">Enlace</a>
+        
+        <section id="productos" class="contenido-oculto">
+            <h1>Productos Destacados</h1>
+            <p>Aquí puedes encontrar nuestros productos más destacados y emocionantes.</p>
+            <!-- Agrega más contenido relacionado con los productos aquí -->
+        </section>
+        
+        
+        <!-- Otras secciones pueden ir aquí -->
+    </main>
+    
+    <!--<footer>
+        <p>Derechos de autor © 2023 Mi Página Web</p>
+    </footer>-->
+    <script src="{% static 'main1.js' %}"></script>
+</body>
+</html>
