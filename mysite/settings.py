@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'sass_processor',
     'myapp', 
     'auth_app',
+    'DRFapi',
    
   
 ]

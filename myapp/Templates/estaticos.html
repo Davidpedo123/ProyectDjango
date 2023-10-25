@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}?{% now 'U' %}">
+    <link rel="stylesheet" href="{% static 'css_dir/style.css' %}?{% now 'U' %}">
 
 </head>
 <body>
@@ -31,23 +31,23 @@
          debido a ataques de cirberdeilcuentes 
         </p>
         
-        <img src="{% static 'proyect.jpeg' %}" alt="Descripción de la imagen"
+        <img src="{% static 'image_dir/proyect.jpeg' %}" alt="Descripción de la imagen"
         id='im'>
         <h2>Grabadora de Audio en segundo plano</h2>
         <p>Este programa te permitira grabar audio en segundo plano y de forma opcional subirlo<br/>a un servidor de forma automatizada un servidor de forma automatizada</p>
-        <img src="{% static 'icon.grabadora.jpeg' %}" alt="Descripción de la imagen"
+        <img src="{% static 'image_dir/icon.grabadora.jpeg' %}" alt="Descripción de la imagen"
         id='im2'>
         <br></br>
         <a href="https://github.com/Davidpedo123/Grabadora_de_Audio">Este es el texto del enlace del programa</a>
         <h2>Gusano</h2>
         <p>Un gusano informatico, basico el cual replica el codigo dentro del mismo programa</br> utilizado frecuentemente por ciberdelicuentes para dinfundir codico malicioso</p>
-        <img src="{% static 'gusano.OIG.jpeg' %}" alt="Descripción de la imagen"
+        <img src="{% static 'image_dir/gusano.OIG.jpeg' %}" alt="Descripción de la imagen"
         id='im3'>
         <br></br>
         <a href="https://github.com/Davidpedo123/Gusano-Infor">Enlace</a>
         <h2>Stream</h2>
         <p>Este programa crea un servidor local, el cual trasmite envio desde la maquina en el que se ejecuto mediante la camara delantera<p>
-            <img src="{% static 'stream.OIG.jpeg' %}" alt="Descripción de la imagen"
+            <img src="{% static 'image_dir/stream.OIG.jpeg' %}" alt="Descripción de la imagen"
             id='im4'>   
         <br></br>
         <a href="https://github.com/Davidpedo123/Stream">Enlace</a>
@@ -65,6 +65,6 @@
     <!--<footer>
         <p>Derechos de autor © 2023 Mi Página Web</p>
     </footer>-->
-    <script src="{% static 'main1.js' %}"></script>
+    <script src="{% static 'js_dir/main1.js' %}"></script>
 </body>
 </html>

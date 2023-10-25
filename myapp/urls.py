@@ -5,10 +5,11 @@ from . import views
 
 urlpatterns = [
   
-    path('', views.index, name='index'),
+    path('', views.index1, name='index'),
     path('Home/', views.hola),
     path('Web/', views.simple),
     path('Dinamico/<str:name>', views.dinamico, name='dinamico' ),
     path('Estaticos', views.estaticos), 
-    path('Login', views.login)
+    path('Login', views.login),
+     path('index', views.index)
 ]
