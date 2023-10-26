@@ -1,0 +1,51 @@
+/* estilo.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+.Resultado {
+    font-size: 24px;
+    color: #022e03;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #061706;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #E7F6E7;
+}
+.password {
+       font-size: 23px;
+    color: #022e03;
+    margin-top: 15px;
+    padding: 6px;
+    border: 2px solid #061706;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #E7F6E7;
+}
+
+
+
+.volver {
+    display: block;
+    margin-top: 20px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.volver:hover {
+    text-decoration: underline;
+}
