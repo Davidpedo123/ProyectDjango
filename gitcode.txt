@@ -1,4 +1,7 @@
- git push origin main
+git push origin main
  git branch
  git stash pop
- git stash
+ git stash 
+ git add .
+ git commit -m "tu mensaje"
+ git push origin main
