@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'myapp', 
     'auth_app',
     'DRFapi',
+    'Stream',
    
   
 ]

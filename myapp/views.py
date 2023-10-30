@@ -1,8 +1,13 @@
 from django.shortcuts import render
+from django.http import StreamingHttpResponse
+from django.views.decorators import gzip
 from django.http import HttpResponse as HR
+from django.views.decorators.csrf import csrf_exempt
+from django.utils.decorators import method_decorator
 from isort import code
 from Generate.views import generar_contraseña
-
+from CalculadoraPrimo.views import calculadora
+from Stream.views import video_stream
 
 # Create your views here.
 def hola(request):
@@ -41,3 +46,24 @@ def mi_vista(request):
         return render(request, 'resultado.html', {'contraseña_generada': contraseña_generada})
     else:
         return render(request, 'generador.html')
+def cal(request):
+    resultado = None
+
+    if request.method == 'POST':
+        num = int(request.POST.get('numero', 0))
+
+        if num > 1:
+            for i in range(2, num):
+                if num % i == 0:
+                    resultado = f'{num} no es primo'
+                    break
+            else:
+                resultado = f'{num} es primo'
+
+    return render(request, 'calculadora.html', {'resultado': resultado})
+
+@csrf_exempt
+@gzip.gzip_page
+def Envivo(request):
+    return StreamingHttpResponse(video_stream(), content_type='multipart/x-mixed-replace; boundary=frame')
+    
