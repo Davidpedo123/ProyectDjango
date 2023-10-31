@@ -66,4 +66,5 @@ def cal(request):
 @gzip.gzip_page
 def Envivo(request):
     return StreamingHttpResponse(video_stream(), content_type='multipart/x-mixed-replace; boundary=frame')
-    
+def MapsApi(request):
+    return render(request, 'Maps.html')

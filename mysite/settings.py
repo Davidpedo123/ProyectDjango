@@ -38,12 +38,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'sass_processor',
-    'myapp', 
+    'myapp',
     'auth_app',
-    'DRFapi',
     'Stream',
-   
-  
+    'API',
 ]
 
 AUTH_USER_MODEL = 'auth_app.CustomUser'
@@ -57,7 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    
+
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -129,7 +127,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-BASE_DIR / 'static',
+    BASE_DIR / 'static',
 
 ]
 

@@ -4,6 +4,7 @@ from flask.views import View
 from myapp.views import mi_vista
 from myapp.views import cal
 from myapp.views import Envivo
+from myapp.views import MapsApi
 from . import views
 
 urlpatterns = [
@@ -18,6 +19,7 @@ urlpatterns = [
     path('Generate/', mi_vista, name='mi_vista'),
     path('cal/', cal, name='cal'),
     path('Stream/', Envivo, name='Envivo'),
+    path('Maps/', MapsApi, name='MapsApi'),
     
 
 ]
