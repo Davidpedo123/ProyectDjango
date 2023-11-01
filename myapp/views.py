@@ -8,6 +8,8 @@ from isort import code
 from Generate.views import generar_contraseña
 from CalculadoraPrimo.views import calculadora
 from Stream.views import video_stream
+from clima.views import clima
+
 
 # Create your views here.
 def hola(request):
@@ -68,3 +70,10 @@ def Envivo(request):
     return StreamingHttpResponse(video_stream(), content_type='multipart/x-mixed-replace; boundary=frame')
 def MapsApi(request):
     return render(request, 'Maps.html')
+
+def Clima(request):
+    mapa_del_clima = clima()
+    
+    return render(request, 'clima.html', {'mapa_del_clima': mapa_del_clima})
+def React(request):
+    return render(request, 'contador.html')

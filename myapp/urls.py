@@ -5,6 +5,8 @@ from myapp.views import mi_vista
 from myapp.views import cal
 from myapp.views import Envivo
 from myapp.views import MapsApi
+from myapp.views import Clima
+from myapp.views import React
 from . import views
 
 urlpatterns = [
@@ -20,6 +22,8 @@ urlpatterns = [
     path('cal/', cal, name='cal'),
     path('Stream/', Envivo, name='Envivo'),
     path('Maps/', MapsApi, name='MapsApi'),
+    path('Clima/', Clima, name='Clima'),
+    path('Contador/', React, name='React'),
     
 
 ]

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mi Aplicación del Clima</title>
+</head>
+<body>
+    <h1>Datos Meteorológicos</h1>
+
+    <h2>Clima Actual</h2>
+    <p>Temperatura: {{ datos_meteorologicos.current.temp }}°K</p>
+    <p>Humedad: {{ datos_meteorologicos.current.humidity }}%</p>
+
+    <h2>Pronóstico Diario</h2>
+    {% for dia in datos_meteorologicos.daily %}
+        <h3>{{ dia.dt | date:"F j, Y" }}</h3>
+        <p>Temperatura Máxima: {{ dia.temp.max }}°K</p>
+        <p>Temperatura Mínima: {{ dia.temp.min }}°K</p>
+        <p>Humedad: {{ dia.humidity }}%</p>
+    {% endfor %}
+</body>
+</html>

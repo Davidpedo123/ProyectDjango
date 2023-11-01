@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'auth_app',
     'Stream',
     'API',
+    'build',
 ]
 
 AUTH_USER_MODEL = 'auth_app.CustomUser'

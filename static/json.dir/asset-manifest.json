@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css_dir/main.8b693d3f.css",
+    "main.js": "/static/js_dir/main.5661e8a1.js",
+    "static/media/im.jpeg": "/static/image_dir/im.6f8163d159a5decef1b6.jpeg",
+    "index.html": "/contador.html",
+    "main.8b693d3f.css.map": "/static/css_dir/main.8b693d3f.css.map",
+    "main.5661e8a1.js.map": "/static/js_dir/main.5661e8a1.js.map"
+  },
+  "entrypoints": [
+    "static/css_dir/main.8b693d3f.css",
+    "static/js_dir/main.5661e8a1.js"
+  ]
+}
